@@ -41,7 +41,7 @@ function reset_page() {
 }
 
 function search_page(query) {
-    var api = "http://jisho.org/api/v1/search/words?keyword=" + query;
+    var api = "https://jisho.org/api/v1/search/words?keyword=" + query;
     var json = $.getJSON(api, function (json) {
         var content = "";
 
