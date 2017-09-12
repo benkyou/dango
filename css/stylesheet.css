@@ -1,0 +1,105 @@
+@charset "UTF-8";
+body,
+html,
+input {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", "HiraKakuPro-W3", "Hiragino Kaku Gothic Pro W3", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "游ゴシック", YuGothic, "ＭＳ Ｐゴシック", "MS PGothic", "ＭＳ ゴシック", "MS Gothic", sans-serif; }
+
+body {
+  position: relative;
+  padding: 0rem 0rem 3rem 0rem; }
+
+a {
+  color: #56d926;
+  text-decoration: none; }
+  a:hover {
+    color: #4FC022; }
+
+header,
+section {
+  padding: 2rem; }
+
+header {
+  position: fixed;
+  width: calc(100% - 4rem);
+  display: flex;
+  flex-direction: row;
+  background: rgba(255, 255, 255, 0.8);
+  z-index: 9; }
+  header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    line-height: 60px;
+    color: #FFFFFF; }
+    header ul li {
+      width: 100px;
+      text-align: center;
+      font-size: 14pt;
+      background: #56d926; }
+      header ul li:hover {
+        cursor: pointer;
+        background: #4FC022; }
+  header input {
+    width: 100%;
+    height: 60px;
+    padding: 0rem 2rem;
+    border: none;
+    font-size: 18pt;
+    outline: none;
+    text-align: left;
+    border-bottom: 2px solid #56d926; }
+
+section {
+  padding-top: 10rem; }
+  section .results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    section .results .result {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      width: 50%; }
+      section .results .result .controls {
+        position: absolute;
+        top: 0;
+        right: 0;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-indent: 0; }
+      section .results .result .title,
+      section .results .result .description {
+        width: 50%; }
+      section .results .result .title {
+        text-align: center; }
+      section .results .result h1 {
+        line-height: 1.1;
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-weight: normal; }
+        section .results .result h1 span {
+          display: inline;
+          font-size: 50%; }
+      section .results .result h2 {
+        font-weight: normal; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100% - 4rem);
+  min-height: 30px;
+  position: absolute;
+  bottom: 0;
+  padding: 1rem 2rem; }
+  footer h3, footer p {
+    padding: 0px;
+    margin: 0px; }
