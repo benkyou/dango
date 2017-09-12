@@ -17,10 +17,10 @@ search_page(search_query)
 theInput.onchange = theInput.onkeyup = function () {
     var text_input = document.getElementById('search');
     if (theInput.value == "") {
-        history.pushState(null, null, "/");
+        history.pushState(null, null, "/dango/");
         reset_page();
     } else {
-        history.pushState(null, null, "/?search=" + encodeURIComponent(theInput.value));
+        history.pushState(null, null, "/dango/?search=" + encodeURIComponent(theInput.value));
         search_page(text_input);
     }
     return false;
