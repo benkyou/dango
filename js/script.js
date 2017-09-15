@@ -34,14 +34,14 @@ function reset_page() {
     content += "</p>";
 
     content += "<p>";
-    content += "<center>Website content provided by <a href=\"https://jisho.org\">Jisho</a>!</center>";
+    content += "<center>Website content provided by <a href=\"http://jisho.org\">Jisho</a>!</center>";
     content += "</p>";
 
     document.getElementById("content").innerHTML = content;
 }
 
 function search_page(query) {
-    var api = "//jisho.org/api/v1/search/words?keyword=" + query;
+    var api = "http://jisho.org/api/v1/search/words?keyword=" + query;
     var json = $.getJSON(api, function (json) {
         var content = "";
 
